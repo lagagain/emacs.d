@@ -28,7 +28,8 @@
 (require-package 'yasnippet-snippets)
 ;; install impatient-mode
 (require-package 'impatient-mode)
-
+(require-package 'ace-jump-mode)
+(global-set-key (kbd "C-c C-j a") 'ace-jump-mode)
 
 
 (provide 'init-local)
