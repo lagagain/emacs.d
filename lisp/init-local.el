@@ -31,6 +31,13 @@
 (require-package 'ace-jump-mode)
 (global-set-key (kbd "C-c C-j a") 'ace-jump-mode)
 
+;; set org-crypt
+(require  'org-crypt)
+(org-crypt-use-before-save-magic)
+(setq org-tags-exclude-from-inheritance (quote ("crypt")))
+
+(setq org-crypt-key "lagagain@email.com")
+
 
 (provide 'init-local)
 ;;; init-local.el ends here
