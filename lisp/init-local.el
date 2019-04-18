@@ -20,7 +20,6 @@
 (require 'init-elpa)
 ;; install emmet
 (require-package 'emmet-mode)
-(require-package 'ivy-yasnippet)
 ;; install yasnippet
 (require-package 'ivy-yasnippet)
 (require-package 'yasnippet)
@@ -28,8 +27,11 @@
 (require-package 'yasnippet-snippets)
 ;; install impatient-mode
 (require-package 'impatient-mode)
+;; install ace-jump-mode
 (require-package 'ace-jump-mode)
 (global-set-key (kbd "C-c C-j a") 'ace-jump-mode)
+;; install ob-async
+(require-package 'ob-async)
 
 ;; set org-crypt
 (require  'org-crypt)
