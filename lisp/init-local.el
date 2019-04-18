@@ -11,10 +11,11 @@
 
 ;;; Setting roswell
 ;;; Reference: https://github.com/roswell/roswell/wiki/Initial-Recommended-Setup
-(load (expand-file-name "~/.roswell/helper.el"))
-(setq inferior-lisp-program "ros -Q run")
-(push `(roswell ("ros" "-Q" "run"))  slime-lisp-implementations)
-(setf slime-default-lisp 'roswell)
+(ignore-errors
+  (load (expand-file-name "~/.roswell/helper.el"))
+  (setq inferior-lisp-program "ros -Q run")
+  (push `(roswell ("ros" "-Q" "run"))  slime-lisp-implementations)
+  (setf slime-default-lisp 'roswell))
 
 ;;; install I will use package
 (require 'init-elpa)
